@@ -1,0 +1,26 @@
+version: '3.9'
+
+services:
+  finedu_app:
+    container_name: finedu_app
+    build:
+      context: .
+    ports:
+      - 8000:8000
+    volumes:
+      - ./finedu_app:/finedu_app
+      - ./data/web/static:/data/web/static/
+      - ./data/web/media:/data/web/media/
+      - ./finedu_app/finedu_portfolio/portfolio_files:/app/portfolio_files  # Volume for Excel files
+
+    env_file:
+      - ./dotenv_files/.env
+    depends_on:
+      - psql
+  psql:
+    container_name: psql_2
+    image: postgres:13-alpine
+    volumes:
+      - ./data/postgres/data:/var/lib/postgresql/data/
+    env_file:
+      - ./dotenv_files/.env

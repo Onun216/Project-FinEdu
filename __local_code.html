@@ -1,0 +1,35 @@
+<!--<form method="get">
+      {% csrf_token %}
+    <div class="portfolio-select-grid">
+    
+        
+      <select name="category" 
+              hx-get="{% url 'metrics' %}"
+              hx-trigger="change"
+              hx-target="#metrics">
+
+          <option selected> Categoria</option>
+          {% for category in categories %}
+            <option value={{ category.pk}}> {{ category.name }}</option>
+          {% endfor %}
+      </select>
+      
+
+      <div id="metrics">
+          {% include 'finedu_portfolio/partials/category_options.html'%}
+      </div>
+
+      <button class="submit" type="submit">Submit</button>
+    
+    </div>
+  </form>-->
+
+<!--<div class="portfolio-select-grid">
+<select class="portfolio-select" name="selected_metric">
+    <option selected> Métrica</option>
+    {% for metric in metrics %}
+      <option value={{ metric.pk}}> {{ metric.name }}</option>
+    {% endfor %}
+  </select>
+</div>-->
+

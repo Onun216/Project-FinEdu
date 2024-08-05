@@ -1,0 +1,1080 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_43e5b244226979a197f52a73db306f48 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_43e5b244226979a197f52a73db306f48" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_43e5b244226979a197f52a73db306f48 = L.map(
+                "map_43e5b244226979a197f52a73db306f48",
+                {
+                    center: [40.7128, -74.0059],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 4,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_bff42d30bfef531d556066a6ae587bab = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_bff42d30bfef531d556066a6ae587bab.addTo(map_43e5b244226979a197f52a73db306f48);
+        
+    
+            var marker_ba9bab7dcbea6142a596aca0d2726e64 = L.marker(
+                [42.32992301080219, -83.04488018147674],
+                {}
+            ).addTo(map_43e5b244226979a197f52a73db306f48);
+        
+    
+        var popup_1841b5e79996943bab284d3ed8bac400 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2ce484d8fb8aac3c3b29dfe84bdfb244 = $(`<div id="html_2ce484d8fb8aac3c3b29dfe84bdfb244" style="width: 100.0%; height: 100.0%;">Ally Financial</div>`)[0];
+                popup_1841b5e79996943bab284d3ed8bac400.setContent(html_2ce484d8fb8aac3c3b29dfe84bdfb244);
+            
+        
+
+        marker_ba9bab7dcbea6142a596aca0d2726e64.bindPopup(popup_1841b5e79996943bab284d3ed8bac400)
+        ;
+
+        
+    
+    
+            var layer_control_6b0dc9c55be71c09e01267cc517d96ac_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_bff42d30bfef531d556066a6ae587bab,
+                },
+                overlays :  {
+                },
+            };
+            let layer_control_6b0dc9c55be71c09e01267cc517d96ac = L.control.layers(
+                layer_control_6b0dc9c55be71c09e01267cc517d96ac_layers.base_layers,
+                layer_control_6b0dc9c55be71c09e01267cc517d96ac_layers.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_43e5b244226979a197f52a73db306f48);
+
+        
+    
+            var marker_c7b87a9d2be947e06cb34396e440985d = L.marker(
+                [37.422566712156964, -122.08414478718545],
+                {}
+            ).addTo(map_43e5b244226979a197f52a73db306f48);
+        
+    
+        var popup_ff828430c0ff656e19c441d8d5933d6f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9bda06448be45cc01350b1850ee4a9d7 = $(`<div id="html_9bda06448be45cc01350b1850ee4a9d7" style="width: 100.0%; height: 100.0%;">Alphabet </div>`)[0];
+                popup_ff828430c0ff656e19c441d8d5933d6f.setContent(html_9bda06448be45cc01350b1850ee4a9d7);
+            
+        
+
+        marker_c7b87a9d2be947e06cb34396e440985d.bindPopup(popup_ff828430c0ff656e19c441d8d5933d6f)
+        ;
+
+        
+    
+    
+            var layer_control_2374056c63d0da3e9df7e2716cda64f9_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_bff42d30bfef531d556066a6ae587bab,
+                },
+                overlays :  {
+                },
+            };
+            let layer_control_2374056c63d0da3e9df7e2716cda64f9 = L.control.layers(
+                layer_control_2374056c63d0da3e9df7e2716cda64f9_layers.base_layers,
+                layer_control_2374056c63d0da3e9df7e2716cda64f9_layers.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_43e5b244226979a197f52a73db306f48);
+
+        
+    
+            var marker_3701f39d3aeb0821b626a95f9a5958f6 = L.marker(
+                [47.622593496970055, -122.33943423409556],
+                {}
+            ).addTo(map_43e5b244226979a197f52a73db306f48);
+        
+    
+        var popup_e82dd5cf7b50825e395b0faa1583868d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_81ef832572b4754a22bafef33d65e52f = $(`<div id="html_81ef832572b4754a22bafef33d65e52f" style="width: 100.0%; height: 100.0%;">Amazon Inc</div>`)[0];
+                popup_e82dd5cf7b50825e395b0faa1583868d.setContent(html_81ef832572b4754a22bafef33d65e52f);
+            
+        
+
+        marker_3701f39d3aeb0821b626a95f9a5958f6.bindPopup(popup_e82dd5cf7b50825e395b0faa1583868d)
+        ;
+
+        
+    
+    
+            var layer_control_a6f002ee44b2c13d890891b6912e4bf8_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_bff42d30bfef531d556066a6ae587bab,
+                },
+                overlays :  {
+                },
+            };
+            let layer_control_a6f002ee44b2c13d890891b6912e4bf8 = L.control.layers(
+                layer_control_a6f002ee44b2c13d890891b6912e4bf8_layers.base_layers,
+                layer_control_a6f002ee44b2c13d890891b6912e4bf8_layers.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_43e5b244226979a197f52a73db306f48);
+
+        
+    
+            var marker_ac77ee11b5ba3755bb3cdfcc9f3fad11 = L.marker(
+                [37.777790879729395, -122.39683818717504],
+                {}
+            ).addTo(map_43e5b244226979a197f52a73db306f48);
+        
+    
+        var popup_77c15e84f81914fa9fe50639605edbd0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8a36723183cba8755cb7bdcbe6eb4aec = $(`<div id="html_8a36723183cba8755cb7bdcbe6eb4aec" style="width: 100.0%; height: 100.0%;">Pinterest Inc.</div>`)[0];
+                popup_77c15e84f81914fa9fe50639605edbd0.setContent(html_8a36723183cba8755cb7bdcbe6eb4aec);
+            
+        
+
+        marker_ac77ee11b5ba3755bb3cdfcc9f3fad11.bindPopup(popup_77c15e84f81914fa9fe50639605edbd0)
+        ;
+
+        
+    
+    
+            var layer_control_4e5846cbd4b94be5f61ae1b6c6dad034_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_bff42d30bfef531d556066a6ae587bab,
+                },
+                overlays :  {
+                },
+            };
+            let layer_control_4e5846cbd4b94be5f61ae1b6c6dad034 = L.control.layers(
+                layer_control_4e5846cbd4b94be5f61ae1b6c6dad034_layers.base_layers,
+                layer_control_4e5846cbd4b94be5f61ae1b6c6dad034_layers.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_43e5b244226979a197f52a73db306f48);
+
+        
+    
+            var marker_0d95bb52fc4f3a3a42585961c9c9d368 = L.marker(
+                [41.257383362428214, -95.96583069072524],
+                {}
+            ).addTo(map_43e5b244226979a197f52a73db306f48);
+        
+    
+        var popup_9b4f34c8cd5de0e32fa6e37061b67cda = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bfd5f5cd84ccf896873709ab3b26ae55 = $(`<div id="html_bfd5f5cd84ccf896873709ab3b26ae55" style="width: 100.0%; height: 100.0%;">Berkshire Hathaway B.</div>`)[0];
+                popup_9b4f34c8cd5de0e32fa6e37061b67cda.setContent(html_bfd5f5cd84ccf896873709ab3b26ae55);
+            
+        
+
+        marker_0d95bb52fc4f3a3a42585961c9c9d368.bindPopup(popup_9b4f34c8cd5de0e32fa6e37061b67cda)
+        ;
+
+        
+    
+    
+            var layer_control_a21f3f15bb65c6ad50114698d3d5aaa5_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_bff42d30bfef531d556066a6ae587bab,
+                },
+                overlays :  {
+                },
+            };
+            let layer_control_a21f3f15bb65c6ad50114698d3d5aaa5 = L.control.layers(
+                layer_control_a21f3f15bb65c6ad50114698d3d5aaa5_layers.base_layers,
+                layer_control_a21f3f15bb65c6ad50114698d3d5aaa5_layers.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_43e5b244226979a197f52a73db306f48);
+
+        
+    
+            var marker_7d35bb1497b2f347e948434ca612c71b = L.marker(
+                [40.74820918529833, -73.9849947789985],
+                {}
+            ).addTo(map_43e5b244226979a197f52a73db306f48);
+        
+    
+        var popup_02a397fb30f8688972399ebcca1ae468 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b9ca4d35661953fd91a1d2e04eed2fa3 = $(`<div id="html_b9ca4d35661953fd91a1d2e04eed2fa3" style="width: 100.0%; height: 100.0%;">Coty Inc.</div>`)[0];
+                popup_02a397fb30f8688972399ebcca1ae468.setContent(html_b9ca4d35661953fd91a1d2e04eed2fa3);
+            
+        
+
+        marker_7d35bb1497b2f347e948434ca612c71b.bindPopup(popup_02a397fb30f8688972399ebcca1ae468)
+        ;
+
+        
+    
+    
+            var layer_control_759d0345c42c6c1b503a005cd2bde2c8_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_bff42d30bfef531d556066a6ae587bab,
+                },
+                overlays :  {
+                },
+            };
+            let layer_control_759d0345c42c6c1b503a005cd2bde2c8 = L.control.layers(
+                layer_control_759d0345c42c6c1b503a005cd2bde2c8_layers.base_layers,
+                layer_control_759d0345c42c6c1b503a005cd2bde2c8_layers.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_43e5b244226979a197f52a73db306f48);
+
+        
+    
+            var marker_ff1f2105c0e52d8f63cb739230bc5de7 = L.marker(
+                [40.72072298381881, -74.0112125458371],
+                {}
+            ).addTo(map_43e5b244226979a197f52a73db306f48);
+        
+    
+        var popup_b4efecdca33dbbaec69221860cf640db = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_be4d7c6a96fc4d2b1915b07d4dfbfb13 = $(`<div id="html_be4d7c6a96fc4d2b1915b07d4dfbfb13" style="width: 100.0%; height: 100.0%;">Citigroup </div>`)[0];
+                popup_b4efecdca33dbbaec69221860cf640db.setContent(html_be4d7c6a96fc4d2b1915b07d4dfbfb13);
+            
+        
+
+        marker_ff1f2105c0e52d8f63cb739230bc5de7.bindPopup(popup_b4efecdca33dbbaec69221860cf640db)
+        ;
+
+        
+    
+    
+            var layer_control_9de2f09e28c8fdf3f5324cfce4fcb294_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_bff42d30bfef531d556066a6ae587bab,
+                },
+                overlays :  {
+                },
+            };
+            let layer_control_9de2f09e28c8fdf3f5324cfce4fcb294 = L.control.layers(
+                layer_control_9de2f09e28c8fdf3f5324cfce4fcb294_layers.base_layers,
+                layer_control_9de2f09e28c8fdf3f5324cfce4fcb294_layers.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_43e5b244226979a197f52a73db306f48);
+
+        
+    
+            var marker_94177245c26c0eb57a2c7bd867919697 = L.marker(
+                [37.387177495653084, -121.96387109274279],
+                {}
+            ).addTo(map_43e5b244226979a197f52a73db306f48);
+        
+    
+        var popup_7ea3825f5658c7a8d9c1d768124e4f34 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1f5dcc4bd09e9803e4b3b21d46af558f = $(`<div id="html_1f5dcc4bd09e9803e4b3b21d46af558f" style="width: 100.0%; height: 100.0%;">Intel Corp.</div>`)[0];
+                popup_7ea3825f5658c7a8d9c1d768124e4f34.setContent(html_1f5dcc4bd09e9803e4b3b21d46af558f);
+            
+        
+
+        marker_94177245c26c0eb57a2c7bd867919697.bindPopup(popup_7ea3825f5658c7a8d9c1d768124e4f34)
+        ;
+
+        
+    
+    
+            var layer_control_5e87908f59cde207af1e7eebc653bd01_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_bff42d30bfef531d556066a6ae587bab,
+                },
+                overlays :  {
+                },
+            };
+            let layer_control_5e87908f59cde207af1e7eebc653bd01 = L.control.layers(
+                layer_control_5e87908f59cde207af1e7eebc653bd01_layers.base_layers,
+                layer_control_5e87908f59cde207af1e7eebc653bd01_layers.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_43e5b244226979a197f52a73db306f48);
+
+        
+    
+            var marker_ad5612c5b33aaade87c49cc35037a8ca = L.marker(
+                [47.64363404904569, -122.1305831445206],
+                {}
+            ).addTo(map_43e5b244226979a197f52a73db306f48);
+        
+    
+        var popup_b07c8715a4ad1bb1fe3887d450d0599f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c67b073e64ff54092eee8169277c14f6 = $(`<div id="html_c67b073e64ff54092eee8169277c14f6" style="width: 100.0%; height: 100.0%;">Microsoft Corp.</div>`)[0];
+                popup_b07c8715a4ad1bb1fe3887d450d0599f.setContent(html_c67b073e64ff54092eee8169277c14f6);
+            
+        
+
+        marker_ad5612c5b33aaade87c49cc35037a8ca.bindPopup(popup_b07c8715a4ad1bb1fe3887d450d0599f)
+        ;
+
+        
+    
+    
+            var layer_control_11033340e8f6940359a742137354b32d_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_bff42d30bfef531d556066a6ae587bab,
+                },
+                overlays :  {
+                },
+            };
+            let layer_control_11033340e8f6940359a742137354b32d = L.control.layers(
+                layer_control_11033340e8f6940359a742137354b32d_layers.base_layers,
+                layer_control_11033340e8f6940359a742137354b32d_layers.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_43e5b244226979a197f52a73db306f48);
+
+        
+    
+            var marker_7848290e9601d70a1b4669b94fb9517e = L.marker(
+                [50.99574112173124, -114.00220260931651],
+                {}
+            ).addTo(map_43e5b244226979a197f52a73db306f48);
+        
+    
+        var popup_b8f550775fe397200a54da634709f3af = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bb7c67db496975d610f2ed8c50cd67a1 = $(`<div id="html_bb7c67db496975d610f2ed8c50cd67a1" style="width: 100.0%; height: 100.0%;">Canadian Pacific Railway</div>`)[0];
+                popup_b8f550775fe397200a54da634709f3af.setContent(html_bb7c67db496975d610f2ed8c50cd67a1);
+            
+        
+
+        marker_7848290e9601d70a1b4669b94fb9517e.bindPopup(popup_b8f550775fe397200a54da634709f3af)
+        ;
+
+        
+    
+    
+            var layer_control_1d23e6977ed7824aca8a1891ac67091e_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_bff42d30bfef531d556066a6ae587bab,
+                },
+                overlays :  {
+                },
+            };
+            let layer_control_1d23e6977ed7824aca8a1891ac67091e = L.control.layers(
+                layer_control_1d23e6977ed7824aca8a1891ac67091e_layers.base_layers,
+                layer_control_1d23e6977ed7824aca8a1891ac67091e_layers.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_43e5b244226979a197f52a73db306f48);
+
+        
+    
+            var marker_c5edabe61544c05f9e90a45238b64c9d = L.marker(
+                [40.73774723449803, -73.98838505186498],
+                {}
+            ).addTo(map_43e5b244226979a197f52a73db306f48);
+        
+    
+        var popup_26f96a53eaad45a88d4760711a748290 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_421ba2127cb2234c9a8a9c12de793dc3 = $(`<div id="html_421ba2127cb2234c9a8a9c12de793dc3" style="width: 100.0%; height: 100.0%;">Warner Brothers Discovery</div>`)[0];
+                popup_26f96a53eaad45a88d4760711a748290.setContent(html_421ba2127cb2234c9a8a9c12de793dc3);
+            
+        
+
+        marker_c5edabe61544c05f9e90a45238b64c9d.bindPopup(popup_26f96a53eaad45a88d4760711a748290)
+        ;
+
+        
+    
+    
+            var layer_control_10f9e02e9e7bf7f61702700d489bc3c0_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_bff42d30bfef531d556066a6ae587bab,
+                },
+                overlays :  {
+                },
+            };
+            let layer_control_10f9e02e9e7bf7f61702700d489bc3c0 = L.control.layers(
+                layer_control_10f9e02e9e7bf7f61702700d489bc3c0_layers.base_layers,
+                layer_control_10f9e02e9e7bf7f61702700d489bc3c0_layers.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_43e5b244226979a197f52a73db306f48);
+
+        
+    
+            var marker_9a6029caae8584e0e08fc9a460abbf8d = L.marker(
+                [40.75798771517751, -73.98601952489079],
+                {}
+            ).addTo(map_43e5b244226979a197f52a73db306f48);
+        
+    
+        var popup_6a9c7ec40f901d8dccc0e4f99600c660 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bc8e5a4c0116a37e3643ef6e5df8a7b3 = $(`<div id="html_bc8e5a4c0116a37e3643ef6e5df8a7b3" style="width: 100.0%; height: 100.0%;">Paramount Global</div>`)[0];
+                popup_6a9c7ec40f901d8dccc0e4f99600c660.setContent(html_bc8e5a4c0116a37e3643ef6e5df8a7b3);
+            
+        
+
+        marker_9a6029caae8584e0e08fc9a460abbf8d.bindPopup(popup_6a9c7ec40f901d8dccc0e4f99600c660)
+        ;
+
+        
+    
+    
+            var layer_control_2d51e93ba84eef9cf0f2cc76d898e216_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_bff42d30bfef531d556066a6ae587bab,
+                },
+                overlays :  {
+                },
+            };
+            let layer_control_2d51e93ba84eef9cf0f2cc76d898e216 = L.control.layers(
+                layer_control_2d51e93ba84eef9cf0f2cc76d898e216_layers.base_layers,
+                layer_control_2d51e93ba84eef9cf0f2cc76d898e216_layers.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_43e5b244226979a197f52a73db306f48);
+
+        
+    
+            var marker_0aa86fef9ca213a849ab59538b0bcffe = L.marker(
+                [29.7307020298528, -95.43210220273069],
+                {}
+            ).addTo(map_43e5b244226979a197f52a73db306f48);
+        
+    
+        var popup_4b4bc925d9d28f8b57ce28444524ff3f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e843f697627c6a0ba49f64061184601e = $(`<div id="html_e843f697627c6a0ba49f64061184601e" style="width: 100.0%; height: 100.0%;">Occidental Petroleum</div>`)[0];
+                popup_4b4bc925d9d28f8b57ce28444524ff3f.setContent(html_e843f697627c6a0ba49f64061184601e);
+            
+        
+
+        marker_0aa86fef9ca213a849ab59538b0bcffe.bindPopup(popup_4b4bc925d9d28f8b57ce28444524ff3f)
+        ;
+
+        
+    
+    
+            var layer_control_50f44b28e147fe641b01d371c797a4a6_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_bff42d30bfef531d556066a6ae587bab,
+                },
+                overlays :  {
+                },
+            };
+            let layer_control_50f44b28e147fe641b01d371c797a4a6 = L.control.layers(
+                layer_control_50f44b28e147fe641b01d371c797a4a6_layers.base_layers,
+                layer_control_50f44b28e147fe641b01d371c797a4a6_layers.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_43e5b244226979a197f52a73db306f48);
+
+        
+    
+            var marker_54b9ffa75248b9d29ef22a1f88c4d86e = L.marker(
+                [37.38863793198384, -122.15856947547232],
+                {}
+            ).addTo(map_43e5b244226979a197f52a73db306f48);
+        
+    
+        var popup_605432c4c1100c4dbe475cb7f0d167b7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b7dabb652420b67243c28bc7e5fceba2 = $(`<div id="html_b7dabb652420b67243c28bc7e5fceba2" style="width: 100.0%; height: 100.0%;">Meta Platforms</div>`)[0];
+                popup_605432c4c1100c4dbe475cb7f0d167b7.setContent(html_b7dabb652420b67243c28bc7e5fceba2);
+            
+        
+
+        marker_54b9ffa75248b9d29ef22a1f88c4d86e.bindPopup(popup_605432c4c1100c4dbe475cb7f0d167b7)
+        ;
+
+        
+    
+    
+            var layer_control_fa0131f2f4626a105266d93f5028c78b_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_bff42d30bfef531d556066a6ae587bab,
+                },
+                overlays :  {
+                },
+            };
+            let layer_control_fa0131f2f4626a105266d93f5028c78b = L.control.layers(
+                layer_control_fa0131f2f4626a105266d93f5028c78b_layers.base_layers,
+                layer_control_fa0131f2f4626a105266d93f5028c78b_layers.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_43e5b244226979a197f52a73db306f48);
+
+        
+    
+            var marker_e968a64bd94bbcb2a27eeec4c4e7f66e = L.marker(
+                [26.400109268872097, -80.10096028807264],
+                {}
+            ).addTo(map_43e5b244226979a197f52a73db306f48);
+        
+    
+        var popup_6a0f1e7233459bf52b0142ecfc9ffc75 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_af56a82433eaa7836893b2736673280a = $(`<div id="html_af56a82433eaa7836893b2736673280a" style="width: 100.0%; height: 100.0%;">DigitalBridge</div>`)[0];
+                popup_6a0f1e7233459bf52b0142ecfc9ffc75.setContent(html_af56a82433eaa7836893b2736673280a);
+            
+        
+
+        marker_e968a64bd94bbcb2a27eeec4c4e7f66e.bindPopup(popup_6a0f1e7233459bf52b0142ecfc9ffc75)
+        ;
+
+        
+    
+    
+            var layer_control_2fe1f418b440313c9044716fc6835fdd_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_bff42d30bfef531d556066a6ae587bab,
+                },
+                overlays :  {
+                },
+            };
+            let layer_control_2fe1f418b440313c9044716fc6835fdd = L.control.layers(
+                layer_control_2fe1f418b440313c9044716fc6835fdd_layers.base_layers,
+                layer_control_2fe1f418b440313c9044716fc6835fdd_layers.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_43e5b244226979a197f52a73db306f48);
+
+        
+    
+            var marker_9e93732a241527f32b330168aef1bd10 = L.marker(
+                [40.76311947449194, -73.97906239353699],
+                {}
+            ).addTo(map_43e5b244226979a197f52a73db306f48);
+        
+    
+        var popup_81ad10abf11f022814e6be0338f581f8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8f050d630d4165fb1af3da05eaa101a6 = $(`<div id="html_8f050d630d4165fb1af3da05eaa101a6" style="width: 100.0%; height: 100.0%;">FTAI Aviation</div>`)[0];
+                popup_81ad10abf11f022814e6be0338f581f8.setContent(html_8f050d630d4165fb1af3da05eaa101a6);
+            
+        
+
+        marker_9e93732a241527f32b330168aef1bd10.bindPopup(popup_81ad10abf11f022814e6be0338f581f8)
+        ;
+
+        
+    
+    
+            var layer_control_ca4b4a0883d9f36ca5a72159e923478c_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_bff42d30bfef531d556066a6ae587bab,
+                },
+                overlays :  {
+                },
+            };
+            let layer_control_ca4b4a0883d9f36ca5a72159e923478c = L.control.layers(
+                layer_control_ca4b4a0883d9f36ca5a72159e923478c_layers.base_layers,
+                layer_control_ca4b4a0883d9f36ca5a72159e923478c_layers.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_43e5b244226979a197f52a73db306f48);
+
+        
+    
+            var marker_49e27d135f791393e6bdc0dd6fa14b88 = L.marker(
+                [52.230911276505005, 5.1636768695771345],
+                {}
+            ).addTo(map_43e5b244226979a197f52a73db306f48);
+        
+    
+        var popup_39393b154dea2a46fd4e8b4c50363c9a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_168cb3761b96d3a92a48b829892a0d72 = $(`<div id="html_168cb3761b96d3a92a48b829892a0d72" style="width: 100.0%; height: 100.0%;">Universal Music Group</div>`)[0];
+                popup_39393b154dea2a46fd4e8b4c50363c9a.setContent(html_168cb3761b96d3a92a48b829892a0d72);
+            
+        
+
+        marker_49e27d135f791393e6bdc0dd6fa14b88.bindPopup(popup_39393b154dea2a46fd4e8b4c50363c9a)
+        ;
+
+        
+    
+    
+            var layer_control_4c13e65b4ff5c506e9cd0cf3cdfe8d7c_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_bff42d30bfef531d556066a6ae587bab,
+                },
+                overlays :  {
+                },
+            };
+            let layer_control_4c13e65b4ff5c506e9cd0cf3cdfe8d7c = L.control.layers(
+                layer_control_4c13e65b4ff5c506e9cd0cf3cdfe8d7c_layers.base_layers,
+                layer_control_4c13e65b4ff5c506e9cd0cf3cdfe8d7c_layers.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_43e5b244226979a197f52a73db306f48);
+
+        
+    
+            var marker_d8aeed1c5f828d91eb38f754e972ea4f = L.marker(
+                [41.88384508821269, -87.63936384454365],
+                {}
+            ).addTo(map_43e5b244226979a197f52a73db306f48);
+        
+    
+        var popup_edad72c3580208fddd3e02527c6f96bb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ad44901cf0d80a68976d3ac3ec6cad7f = $(`<div id="html_ad44901cf0d80a68976d3ac3ec6cad7f" style="width: 100.0%; height: 100.0%;">Potbelly</div>`)[0];
+                popup_edad72c3580208fddd3e02527c6f96bb.setContent(html_ad44901cf0d80a68976d3ac3ec6cad7f);
+            
+        
+
+        marker_d8aeed1c5f828d91eb38f754e972ea4f.bindPopup(popup_edad72c3580208fddd3e02527c6f96bb)
+        ;
+
+        
+    
+    
+            var layer_control_35a1466ff0ff2e728b01f8ee73185262_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_bff42d30bfef531d556066a6ae587bab,
+                },
+                overlays :  {
+                },
+            };
+            let layer_control_35a1466ff0ff2e728b01f8ee73185262 = L.control.layers(
+                layer_control_35a1466ff0ff2e728b01f8ee73185262_layers.base_layers,
+                layer_control_35a1466ff0ff2e728b01f8ee73185262_layers.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_43e5b244226979a197f52a73db306f48);
+
+        
+    
+            var marker_02e4fc5154eab1824e9643d30e92adc5 = L.marker(
+                [25.68263508942933, -80.31528692956154],
+                {}
+            ).addTo(map_43e5b244226979a197f52a73db306f48);
+        
+    
+        var popup_87b5d81c0f6e250bd5b77dc22ad293d0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9890700f21d76e3b000e249378af3577 = $(`<div id="html_9890700f21d76e3b000e249378af3577" style="width: 100.0%; height: 100.0%;">International Money Express</div>`)[0];
+                popup_87b5d81c0f6e250bd5b77dc22ad293d0.setContent(html_9890700f21d76e3b000e249378af3577);
+            
+        
+
+        marker_02e4fc5154eab1824e9643d30e92adc5.bindPopup(popup_87b5d81c0f6e250bd5b77dc22ad293d0)
+        ;
+
+        
+    
+    
+            var layer_control_fd03cc64e56e9c3f5a589360dbd64bf8_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_bff42d30bfef531d556066a6ae587bab,
+                },
+                overlays :  {
+                },
+            };
+            let layer_control_fd03cc64e56e9c3f5a589360dbd64bf8 = L.control.layers(
+                layer_control_fd03cc64e56e9c3f5a589360dbd64bf8_layers.base_layers,
+                layer_control_fd03cc64e56e9c3f5a589360dbd64bf8_layers.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_43e5b244226979a197f52a73db306f48);
+
+        
+    
+            var marker_da6d7e094ebdd00b94b3062a27d865bd = L.marker(
+                [43.53076689913842, -116.15033892932112],
+                {}
+            ).addTo(map_43e5b244226979a197f52a73db306f48);
+        
+    
+        var popup_06e71b8b7e229945aa7a049e4848a71a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1931d17e76b9e64a79fc51bcc904fe4a = $(`<div id="html_1931d17e76b9e64a79fc51bcc904fe4a" style="width: 100.0%; height: 100.0%;">Micron</div>`)[0];
+                popup_06e71b8b7e229945aa7a049e4848a71a.setContent(html_1931d17e76b9e64a79fc51bcc904fe4a);
+            
+        
+
+        marker_da6d7e094ebdd00b94b3062a27d865bd.bindPopup(popup_06e71b8b7e229945aa7a049e4848a71a)
+        ;
+
+        
+    
+    
+            var layer_control_702865d9149b72d2bf93d75ab7fbe6ad_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_bff42d30bfef531d556066a6ae587bab,
+                },
+                overlays :  {
+                },
+            };
+            let layer_control_702865d9149b72d2bf93d75ab7fbe6ad = L.control.layers(
+                layer_control_702865d9149b72d2bf93d75ab7fbe6ad_layers.base_layers,
+                layer_control_702865d9149b72d2bf93d75ab7fbe6ad_layers.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_43e5b244226979a197f52a73db306f48);
+
+        
+    
+            var marker_efc1cc148ce8daf43ffa1b0976094f39 = L.marker(
+                [34.15695444616763, -118.32529584442159],
+                {}
+            ).addTo(map_43e5b244226979a197f52a73db306f48);
+        
+    
+        var popup_1cf9f10341ee3aaafb3095e8ada046ff = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_68fc4740376ab781462617e65cc15688 = $(`<div id="html_68fc4740376ab781462617e65cc15688" style="width: 100.0%; height: 100.0%;">Walt Disney</div>`)[0];
+                popup_1cf9f10341ee3aaafb3095e8ada046ff.setContent(html_68fc4740376ab781462617e65cc15688);
+            
+        
+
+        marker_efc1cc148ce8daf43ffa1b0976094f39.bindPopup(popup_1cf9f10341ee3aaafb3095e8ada046ff)
+        ;
+
+        
+    
+    
+            var layer_control_ed35960b6b01becac5f31946a8aec14f_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_bff42d30bfef531d556066a6ae587bab,
+                },
+                overlays :  {
+                },
+            };
+            let layer_control_ed35960b6b01becac5f31946a8aec14f = L.control.layers(
+                layer_control_ed35960b6b01becac5f31946a8aec14f_layers.base_layers,
+                layer_control_ed35960b6b01becac5f31946a8aec14f_layers.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_43e5b244226979a197f52a73db306f48);
+
+        
+    
+            var marker_2407c68ae9f2e96bf3e450c766747457 = L.marker(
+                [42.15698076443109, -87.87059987381771],
+                {}
+            ).addTo(map_43e5b244226979a197f52a73db306f48);
+        
+    
+        var popup_57b82f673aff3bbd940b8150c06ace2a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c080c34918a561e190545b2bde99faa3 = $(`<div id="html_c080c34918a561e190545b2bde99faa3" style="width: 100.0%; height: 100.0%;">Walgreens Boots Alliance</div>`)[0];
+                popup_57b82f673aff3bbd940b8150c06ace2a.setContent(html_c080c34918a561e190545b2bde99faa3);
+            
+        
+
+        marker_2407c68ae9f2e96bf3e450c766747457.bindPopup(popup_57b82f673aff3bbd940b8150c06ace2a)
+        ;
+
+        
+    
+    
+            var layer_control_7f6c719c5a72a21a23ceada645f18605_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_bff42d30bfef531d556066a6ae587bab,
+                },
+                overlays :  {
+                },
+            };
+            let layer_control_7f6c719c5a72a21a23ceada645f18605 = L.control.layers(
+                layer_control_7f6c719c5a72a21a23ceada645f18605_layers.base_layers,
+                layer_control_7f6c719c5a72a21a23ceada645f18605_layers.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_43e5b244226979a197f52a73db306f48);
+
+        
+    
+            var marker_794dc9d14f70ab44e41815e442eab5e6 = L.marker(
+                [36.115964109298325, -115.17312908396352],
+                {}
+            ).addTo(map_43e5b244226979a197f52a73db306f48);
+        
+    
+        var popup_0d8a68e456ccce02b414ff3b095c9b5b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_81e18ca5b14b8481331e095cf6bc4a73 = $(`<div id="html_81e18ca5b14b8481331e095cf6bc4a73" style="width: 100.0%; height: 100.0%;">Caesar's Entertainment</div>`)[0];
+                popup_0d8a68e456ccce02b414ff3b095c9b5b.setContent(html_81e18ca5b14b8481331e095cf6bc4a73);
+            
+        
+
+        marker_794dc9d14f70ab44e41815e442eab5e6.bindPopup(popup_0d8a68e456ccce02b414ff3b095c9b5b)
+        ;
+
+        
+    
+    
+            var layer_control_19b3624a14e2c42511a03b87617348b1_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_bff42d30bfef531d556066a6ae587bab,
+                },
+                overlays :  {
+                },
+            };
+            let layer_control_19b3624a14e2c42511a03b87617348b1 = L.control.layers(
+                layer_control_19b3624a14e2c42511a03b87617348b1_layers.base_layers,
+                layer_control_19b3624a14e2c42511a03b87617348b1_layers.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_43e5b244226979a197f52a73db306f48);
+
+        
+    
+            var marker_a1c23a8839156bd99c37418eb4214fe0 = L.marker(
+                [36.13107804645547, -115.17310140634582],
+                {}
+            ).addTo(map_43e5b244226979a197f52a73db306f48);
+        
+    
+        var popup_67d2898af39a923db256582ecbe99d8d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d0bce974dc0268e80b951ff455c8061e = $(`<div id="html_d0bce974dc0268e80b951ff455c8061e" style="width: 100.0%; height: 100.0%;">MGM Resorts</div>`)[0];
+                popup_67d2898af39a923db256582ecbe99d8d.setContent(html_d0bce974dc0268e80b951ff455c8061e);
+            
+        
+
+        marker_a1c23a8839156bd99c37418eb4214fe0.bindPopup(popup_67d2898af39a923db256582ecbe99d8d)
+        ;
+
+        
+    
+    
+            var layer_control_0478b77436e1280d55fdd168906d8de0_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_bff42d30bfef531d556066a6ae587bab,
+                },
+                overlays :  {
+                },
+            };
+            let layer_control_0478b77436e1280d55fdd168906d8de0 = L.control.layers(
+                layer_control_0478b77436e1280d55fdd168906d8de0_layers.base_layers,
+                layer_control_0478b77436e1280d55fdd168906d8de0_layers.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_43e5b244226979a197f52a73db306f48);
+
+        
+    
+            var marker_65c44ebe6c1e4843a60b495da7c4ebca = L.marker(
+                [34.97002912877908, 135.7562304576366],
+                {}
+            ).addTo(map_43e5b244226979a197f52a73db306f48);
+        
+    
+        var popup_1ffbe039bfe35314496fa04ba40def69 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4ae1f813bd3a358c986fe8661bfca5c8 = $(`<div id="html_4ae1f813bd3a358c986fe8661bfca5c8" style="width: 100.0%; height: 100.0%;">Nintendo Co. LTD.</div>`)[0];
+                popup_1ffbe039bfe35314496fa04ba40def69.setContent(html_4ae1f813bd3a358c986fe8661bfca5c8);
+            
+        
+
+        marker_65c44ebe6c1e4843a60b495da7c4ebca.bindPopup(popup_1ffbe039bfe35314496fa04ba40def69)
+        ;
+
+        
+    
+    
+            var layer_control_87043ea3387da61918d84ee9663e89f1_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_bff42d30bfef531d556066a6ae587bab,
+                },
+                overlays :  {
+                },
+            };
+            let layer_control_87043ea3387da61918d84ee9663e89f1 = L.control.layers(
+                layer_control_87043ea3387da61918d84ee9663e89f1_layers.base_layers,
+                layer_control_87043ea3387da61918d84ee9663e89f1_layers.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_43e5b244226979a197f52a73db306f48);
+
+        
+    
+            var marker_e6a492653fb8f28e33248f678c106c10 = L.marker(
+                [49.28392504958524, -123.11945829673341],
+                {}
+            ).addTo(map_43e5b244226979a197f52a73db306f48);
+        
+    
+        var popup_f3b1782eed10220c3a13a525c705f7cc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_53a1c1a9748e2d63ee8fdc32c0c2ef19 = $(`<div id="html_53a1c1a9748e2d63ee8fdc32c0c2ef19" style="width: 100.0%; height: 100.0%;">Africa Oil Corp.</div>`)[0];
+                popup_f3b1782eed10220c3a13a525c705f7cc.setContent(html_53a1c1a9748e2d63ee8fdc32c0c2ef19);
+            
+        
+
+        marker_e6a492653fb8f28e33248f678c106c10.bindPopup(popup_f3b1782eed10220c3a13a525c705f7cc)
+        ;
+
+        
+    
+    
+            var layer_control_ae31bef770d3b744e68b094c9178f6b9_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_bff42d30bfef531d556066a6ae587bab,
+                },
+                overlays :  {
+                },
+            };
+            let layer_control_ae31bef770d3b744e68b094c9178f6b9 = L.control.layers(
+                layer_control_ae31bef770d3b744e68b094c9178f6b9_layers.base_layers,
+                layer_control_ae31bef770d3b744e68b094c9178f6b9_layers.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_43e5b244226979a197f52a73db306f48);
+
+        
+    
+            var marker_ec4eb9ea0445b593296fe38248b1992c = L.marker(
+                [46.4613638854256, 6.323698675715881],
+                {}
+            ).addTo(map_43e5b244226979a197f52a73db306f48);
+        
+    
+        var popup_c8d20f9f25e771519ecdb03af7d559a3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9813311be20caefbd8a7a30b3d9b72a9 = $(`<div id="html_9813311be20caefbd8a7a30b3d9b72a9" style="width: 100.0%; height: 100.0%;">Garrett Motion</div>`)[0];
+                popup_c8d20f9f25e771519ecdb03af7d559a3.setContent(html_9813311be20caefbd8a7a30b3d9b72a9);
+            
+        
+
+        marker_ec4eb9ea0445b593296fe38248b1992c.bindPopup(popup_c8d20f9f25e771519ecdb03af7d559a3)
+        ;
+
+        
+    
+    
+            var layer_control_b63614b23a65a2a4ef3a7e977929e537_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_bff42d30bfef531d556066a6ae587bab,
+                },
+                overlays :  {
+                },
+            };
+            let layer_control_b63614b23a65a2a4ef3a7e977929e537 = L.control.layers(
+                layer_control_b63614b23a65a2a4ef3a7e977929e537_layers.base_layers,
+                layer_control_b63614b23a65a2a4ef3a7e977929e537_layers.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_43e5b244226979a197f52a73db306f48);
+
+        
+    
+            var marker_f8fbb983e769124130690722412a8089 = L.marker(
+                [33.87147071562627, -84.33387933791272],
+                {}
+            ).addTo(map_43e5b244226979a197f52a73db306f48);
+        
+    
+        var popup_c59c63416c1ecbf7cd29fee350e26239 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f4e1435835093020444e13b393940999 = $(`<div id="html_f4e1435835093020444e13b393940999" style="width: 100.0%; height: 100.0%;">Gray Television</div>`)[0];
+                popup_c59c63416c1ecbf7cd29fee350e26239.setContent(html_f4e1435835093020444e13b393940999);
+            
+        
+
+        marker_f8fbb983e769124130690722412a8089.bindPopup(popup_c59c63416c1ecbf7cd29fee350e26239)
+        ;
+
+        
+    
+    
+            var layer_control_9c73b83b111cdd2c74e26991e148e97a_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_bff42d30bfef531d556066a6ae587bab,
+                },
+                overlays :  {
+                },
+            };
+            let layer_control_9c73b83b111cdd2c74e26991e148e97a = L.control.layers(
+                layer_control_9c73b83b111cdd2c74e26991e148e97a_layers.base_layers,
+                layer_control_9c73b83b111cdd2c74e26991e148e97a_layers.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_43e5b244226979a197f52a73db306f48);
+
+        
+</script>
+</html>

@@ -1,0 +1,84 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+
+  <main class="main-content section-wrapper">
+    <div class="section-content-wide">
+      <div class="section-gap">
+          
+      </div>
+    </div>
+
+    <div class="portfolio-select-grid">   
+    <form method="POST">
+      {% csrf_token%}
+      {{ form.as_p }}
+      <button class="portfolio-select-grid-submit" type="submit">Gerar PDF</button>
+      <a href="{% url 'my-portfolio' %}" class= "portfolio-select-grid-submit">Limpar</a>
+      <a href="{% url 'my-portfolio-dividends' %}" class= "portfolio-select-grid-submit">Ver dividendos</a>
+    </form>
+    </div>
+
+
+    {% for company, positions in holdings.items %}
+  
+    <div class="container-portfolio-detail">
+    <div class="accordion">
+      <button type="button" class="portfolio_accordion_button">{{ company }}</button>
+      <div class="portfolio_accordion_content" id="{{ company }}">
+          <table class="portfolio-detail-table">
+              <thead>
+                  <th>Data</th>
+                  <th>Quantidade</th>
+                  <th>Preço</th>             
+              </thead>
+              <tbody>         
+                  {% for position in positions %}
+                  <tr class="constituent-detail">                
+                      <td>{{position.purchase_date}}</td>
+                      <td>{{position.number_of_shares}}</td>
+                      <td>{{position.price_paid_per_share}}{{position.currency}}</td>
+                  </tr>
+                  {% endfor %} 
+                  
+                  {% for key, value in total_nr_shares.items %}
+                  {% if key == company %}
+                  <tr class="constituent-detail">                
+                    <td></td>
+                    <td style="font-weight: bold;">{{value}}</td>
+                    <td></td>
+                 </tr>
+                 {% endif %}
+                
+                 {% endfor %}
+                
+             
+              </tbody>
+          </table>
+         
+      </div>   
+  </div>  
+  </div>
+
+  {% endfor %}
+ 
+<script>
+  document.querySelectorAll('.portfolio_accordion_button').forEach(button => {
+      button.addEventListener('click', () => {
+          const accordionContent = button.nextElementSibling;
+
+          button.classList.toggle('portfolio_accordion_button--active');
+
+          if (button.classList.contains('portfolio_accordion_button--active')) {
+              accordionContent.style.maxHeight = accordionContent.scrollHeight + 'px';
+          } else {
+              accordionContent.style.maxHeight = 0;
+          }
+      });
+  });
+</script>
+
+  </main>
+
+{% endblock content %}

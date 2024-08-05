@@ -1,0 +1,90 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+
+  <main class="main-content section-wrapper">
+    <div class="section-content-wide">
+      <div class="section-gap">     
+       <canvas id="dividendChart"></canvas>
+        <script>        
+          $(document).ready(function(){
+          const ctx = document.getElementById('dividendChart').getContext('2d');
+          const dividendChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+              labels: [{% for year in x_dividend_graph %}'{{year}}',{% endfor %}], 
+              datasets: [{
+                label: 'Dividendos',
+                data: {{y_dividend_graph|safe}},
+                backgroundColor: 'rgba(0, 128, 128, 0.2)', // teal
+                borderColor: 'rgba(0, 128, 128, 0.2)',
+              }]
+            },
+            options: {              
+              scales: {
+                y: {
+                  beginAtZero: true
+                }
+              }
+            }
+          });
+        }
+          )
+        </script>    
+      </div>
+    </div>
+
+    <div class="portfolio-section-container">
+      <div class="portfolio-tables-container">
+        <div class="current-portfolio-dividends">
+          <table class="current-portfolio-dividends-table scrollable-table">
+            <caption class="dividend-table-caption">Portfolio actual</caption> 
+            <thead>
+              <tr>
+                <th>Empresa</th>
+                <th>Dividendos</th>        
+              </tr>
+            </thead>
+
+            <tbody>
+            {% for position in current_portfolio_dividend_data %}
+            {% for company, dividends in position.items %}
+              <tr>
+                <td>{{company}}</td>
+                <td>€{{dividends}}</td>         
+              </tr>
+            {% endfor %}
+            {% endfor %}
+            </tbody>
+          </table>
+        </div>
+
+      <div class="previous-portfolio-dividends-table scrollable-table-2">
+        <table class="previous-portfolio-dividends-table scrollable-table-2">
+          <caption class="dividend-table-caption">Posições anteriores</caption> 
+          <thead>
+            <tr>
+              <th>Empresa</th>
+              <th>Dividendos</th>        
+            </tr>
+          </thead>
+  
+          <tbody>
+          {% for position in previous_portfolio_dividend_data %}
+          {% for company, dividends in position.items %}
+            <tr>
+              <td>{{company}}</td>
+              <td>€{{dividends}}</td>         
+            </tr>
+          {% endfor %}
+          {% endfor %}
+          </tbody>
+        </table>
+      </div> 
+    </div>
+  </div>
+
+  </main>
+
+{% endblock content %}

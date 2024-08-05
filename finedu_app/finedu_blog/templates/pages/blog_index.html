@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <main class="main-content section-wrapper">
+    <div class="section-content-wide">
+      <div class="section-gap">
+
+      {% if blog_posts %}
+        <div class="card-grid">
+          {% for blog_post in blog_posts %}
+            {% include 'partials/_blog_post.html' with i=forloop.counter0 %}
+          {% endfor %}
+        </div>
+      {% else %}
+        <div class="not-found center">
+          <h1>Nada encontrado 😔</h1>
+          <p>
+            Não encontrei nada nesse link, por favor, clique em outro 
+            link do nosso site ou vá para 
+            <a href="{% url 'finedu_blog:blog-home' %}">Blog</a>.
+          </p>
+        </div>
+      {% endif %}
+
+      </div>
+    </div>
+  </main>
+{% endblock content %}

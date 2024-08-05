@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <main class="main-content section-wrapper">
+    <div class="section-content-narrow">
+      <div class="section-gap">
+        <h1 class="center">{{ glossary_page.title }}</h1>
+        {{ glossary_page.content | safe }}
+      </div>
+    </div>
+  </main>
+{% endblock content %}

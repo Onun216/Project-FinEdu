@@ -1,0 +1,74 @@
+{% extends 'base.html' %}
+
+{% block additional_head %}
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.2/codemirror.min.css">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/codemirror/6.65.7/theme/dracula.min.css">
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.2/codemirror.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.2/mode/python/python.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.2/mode/javascript/javascript.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.2/mode/htmlmixed/htmlmixed.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.2/mode/css/css.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.2/mode/xml/xml.min.js"></script>
+{% endblock additional_head %}
+
+{% block content %}
+<main class="main-content single-post section-wrapper">
+  <div class="single-post-content section-content-narrow">
+    <div class="single-post-gap section-gap">
+
+      {% if blog_post.cover and blog_post.cover_in_blog_post_content %}
+        <div class="single-post-cover pb-base">
+          <img 
+            loading="lazy" 
+            src="{{ blog_post.cover.url }}" 
+            alt="{{ blog_post.title }}"
+          >
+        </div>
+      {% endif %}
+
+      <h2 class="single-post-title pb-base center">
+        {{ blog_post.title }}
+      </h2>
+
+      <div class="post-meta pb-base">
+        <div class="post-meta-item">
+          <a 
+            class="post-meta-link" 
+            href="{% url 'finedu_blog:created_by' blog_post.created_by.pk  %}"
+          >
+            <i class="fa-solid fa-user"></i>
+            <span>
+              {% if blog_post.created_by.first_name %}
+                {{ blog_post.created_by.first_name }} 
+                {{ blog_post.created_by.last_name }}
+              {% else %}
+                {{ blog_post.created_by.username }}
+              {% endif %}
+            </span>
+          </a>
+        </div>
+        <div class="post-meta-item">
+          <span class="post-meta-link">
+            <i class="fa-solid fa-calendar-days"></i>
+            <span>
+              {{ blog_post.created_at | date:'d/m/Y \à\s H:i' }}
+            </span>
+          </span>
+        </div>
+
+        
+      </div>
+
+      <div class="separator"></div>
+
+      <div class="single-post-content">
+        {{ blog_post.content | safe  }} 
+            
+      </div>
+    
+    </div>
+  </div>
+</main>
+
+{% endblock content %}
